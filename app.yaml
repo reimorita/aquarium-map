@@ -1,0 +1,17 @@
+application: aquarium-maps
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+- url: /css
+  static_dir: template/css
+
+- url: /img
+  static_dir: template/img
+  
+- url: /js
+  static_dir: template/js
+  
+- url: /.*
+  script: _go_app 

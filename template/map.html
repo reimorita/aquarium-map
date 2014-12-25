@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<title>水族館マップGPSゲッター</title>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type="text/javascript" src="/js/map.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img src="img/title.png">
+	</div>
+	<div id="map" class="maps"></div>
+	<div id="panel" class="panel">
+		<input id="name" size="50" type="text"> <input type="button"
+			value="GPS保存" onclick="importGPS()">
+	</div>
+	<div class="resultList">
+		<div id="result"></div>
+	</div>
+</body>
+</html>
